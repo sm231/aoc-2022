@@ -7,7 +7,7 @@ def sort(array):
         i -= 1
         
 def main():
-    f = open('/home/sm/advent-of-code/2022/day1/input.txt')
+    f = open('input.txt')
     calories = [0, 0, 0, 0]
     cal = 0
     for line in f:
