@@ -1,5 +1,5 @@
 def sort(array):
-    i = len(array) - 1
+    i = 3
     while i > 0 and array[i] > array[i-1]:
         tmp = array[i]
         array[i] = array[i-1]
@@ -7,13 +7,13 @@ def sort(array):
         i -= 1
         
 def main():
-    f = open('input.txt', 'r')
-    calories = []
+    f = open('/home/sm/advent-of-code/2022/day1/input.txt')
+    calories = [0, 0, 0, 0]
     cal = 0
     for line in f:
         if line == '\n':
-            # calories of the next elf. So append to the list and sort list with insertionSort on the last index. Carry on by resetting cal to 0
-            calories.append(cal)
+            # calories of the next elf. So place in the list and sort list with insertionSort on the last index. Carry on by resetting cal to 0
+            calories[3] = cal
             sort(calories)
             cal = 0
         else:
