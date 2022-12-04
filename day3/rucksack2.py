@@ -11,7 +11,7 @@ def findbadge(elf1, elf2, elf3):
                         return elf3[k]
 
 def main():
-    path = "/home/sm/advent-of-code/2022/day3/input.txt"
+    path = "input.txt"
     maxline = len(open(path).readlines())
     result = 0
     for i in range(1, maxline, 3):

@@ -9,7 +9,7 @@ def findwrongitem(line):
             j += 1
 
 def main():
-    f = open('/home/sm/advent-of-code/2022/day3/input.txt', 'r')
+    f = open('input.txt', 'r')
     result = 0
     for line in f:
         item = findwrongitem(line[:-1])
